@@ -1,4 +1,5 @@
-Este projeto tem o intuito de criar um formulário de cadastro .
+Este projeto tem o intuito de criar um formulário de cadastro.
+
 Esta é uma aplicação web, então toda a operação será no navegador.
 O formulário tem campos obrigatórios,  que são validados pelo HTML, todos os campos tem que ser preenchidos se não  o submit não é feito.
 Em forma de validação no JavaScript é feita a validação do CPF, que segue as regras da receita federal.
