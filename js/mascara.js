@@ -28,33 +28,42 @@ function mascaraCelular() {
         celular = celular + ')';
         document.forms[0].celular.value = celular;
     }
-if(celular.length == 4){
-    celular = celular + ' ';
-    document.forms[0].celular.value = celular;
-}
-if(celular.length == 10){
-    celular = celular + '-';
-    document.forms[0].celular.value = celular;
-}
+    if (celular.length == 4) {
+        celular = celular + ' ';
+        document.forms[0].celular.value = celular;
+    }
+    if (celular.length == 10) {
+        celular = celular + '-';
+        document.forms[0].celular.value = celular;
+    }
 
 }
-function mascaraTelefone (){
-var telefone =document.getElementById("telefone").value;
-if(telefone.length == 0){
-    telefone = telefone + '(';
-    document.forms[0].telefone.value = telefone;
-}
-if(telefone.length == 3){
-    telefone = telefone + ')';
-    document.forms[0].telefone.value = telefone;
-}
-if(telefone.length == 4 ){
-    telefone = telefone + ' ';
-    document.forms[0].telefone.value = telefone;
-}
-if(telefone.length == 9){
-    telefone = telefone + '-';
-    document.forms[0].telefone.value = telefone;
+function mascaraTelefone() {
+    var telefone = document.getElementById("telefone").value;
+    if (telefone.length == 0) {
+        telefone = telefone + '(';
+        document.forms[0].telefone.value = telefone;
+    }
+    if (telefone.length == 3) {
+        telefone = telefone + ')';
+        document.forms[0].telefone.value = telefone;
+    }
+    if (telefone.length == 4) {
+        telefone = telefone + ' ';
+        document.forms[0].telefone.value = telefone;
+    }
+    if (telefone.length == 9) {
+        telefone = telefone + '-';
+        document.forms[0].telefone.value = telefone;
+    }
+
 }
 
+//criada a função para mascarar o cep
+function mascaraCep(cep) {
+    cep = document.getElementById("cep").value;
+    if (cep.length == 5) {
+        cep = cep + '-';
+        document.forms[0].cep.value = cep;
+    }
 }
